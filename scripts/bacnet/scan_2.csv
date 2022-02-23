@@ -1,0 +1,7 @@
+address,device_id,max_apdu_length,segmentation_supported,vendor_id
+10.0.0.201,20100,480,segmentedBoth,8
+10.0.0.201,20100,480,segmentedBoth,8
+10.0.0.201,20100,480,segmentedBoth,8
+10.0.0.201,20100,480,segmentedBoth,8
+26300:1,2227623,480,noSegmentation,133
+26300:1,2227623,480,noSegmentation,133
