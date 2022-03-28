@@ -353,3 +353,24 @@ Traceback (most recent call last):
   File "/home/developer/volttron/env/lib/python3.7/site-packages/gevent/_compat.py", line 66, in reraise
     raise value
 volttron.platform.jsonrpc.RemoteError: builtins.RuntimeError('BRS BRS Device communication aborted: noResponse')
+    
+    
+    
+    RuntimeError: Device communication aborted: noResponse
+
+2022-03-28 18:27:09,106 (bacnet_proxyagent-0.5 23580) <stderr> ERROR: ERROR:volttron.platform.vip.agent.subsystems.rpc:unhandled exception in JSON-RPC method 'read_properties': 
+2022-03-28 18:27:09,106 (bacnet_proxyagent-0.5 23580) <stderr> ERROR: Traceback (most recent call last):
+2022-03-28 18:27:09,107 (bacnet_proxyagent-0.5 23580) <stderr> ERROR:   File "/home/developer/volttron/volttron/platform/vip/agent/subsystems/rpc.py", line 181, in method
+2022-03-28 18:27:09,107 (bacnet_proxyagent-0.5 23580) <stderr> ERROR:     return method(*args, **kwargs)
+2022-03-28 18:27:09,109 (bacnet_proxyagent-0.5 23580) <stderr> ERROR:   File "/home/developer/.volttron/agents/8871b34a-25c5-483f-a602-452b0bbf84be/bacnet_proxyagent-0.5/bacnet_proxy/agent.py", line 774, in read_properties
+2022-03-28 18:27:09,110 (bacnet_proxyagent-0.5 23580) <stderr> ERROR:     bacnet_results = iocb.ioResult.get(10)
+2022-03-28 18:27:09,110 (bacnet_proxyagent-0.5 23580) <stderr> ERROR:   File "src/gevent/event.py", line 305, in gevent._gevent_cevent.AsyncResult.get
+2022-03-28 18:27:09,111 (bacnet_proxyagent-0.5 23580) <stderr> ERROR:   File "src/gevent/event.py", line 335, in gevent._gevent_cevent.AsyncResult.get
+2022-03-28 18:27:09,111 (bacnet_proxyagent-0.5 23580) <stderr> ERROR:   File "src/gevent/event.py", line 323, in gevent._gevent_cevent.AsyncResult.get
+2022-03-28 18:27:09,112 (bacnet_proxyagent-0.5 23580) <stderr> ERROR:   File "src/gevent/event.py", line 303, in gevent._gevent_cevent.AsyncResult._raise_exception
+2022-03-28 18:27:09,112 (bacnet_proxyagent-0.5 23580) <stderr> ERROR:   File "/home/developer/volttron/env/lib/python3.7/site-packages/gevent/_compat.py", line 66, in reraise
+2022-03-28 18:27:09,112 (bacnet_proxyagent-0.5 23580) <stderr> ERROR:     raise value
+2022-03-28 18:27:09,113 (bacnet_proxyagent-0.5 23580) <stderr> ERROR: RuntimeError: Device communication aborted: noResponse
+2022-03-28 18:27:09,114 (bacnet_proxyagent-0.5 23580) <stderr> ERROR: 
+2022-03-28 18:27:09,461 () volttron.platform.auth INFO: loading auth file /home/developer/.volttron/auth.json
+20
