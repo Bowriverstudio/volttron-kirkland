@@ -374,3 +374,72 @@ volttron.platform.jsonrpc.RemoteError: builtins.RuntimeError('BRS BRS Device com
 2022-03-28 18:27:09,114 (bacnet_proxyagent-0.5 23580) <stderr> ERROR: 
 2022-03-28 18:27:09,461 () volttron.platform.auth INFO: loading auth file /home/developer/.volttron/auth.json
 20
+
+    
+    
+    =['SXr9p0DYyP3K_ixoDz5WeGGfIHYN00WVj4K9Ouq2n0k'], user='control.connection'
+2022-03-28 18:35:29,797 () volttron.platform.auth INFO: AUTH: After authenticate user id: 'control.connection', b'9b278d09-fa15-4520-b182-c72961a521aa'
+2022-03-28 18:35:29,797 () volttron.platform.auth INFO: authentication success: userid=b'9b278d09-fa15-4520-b182-c72961a521aa' domain='vip', address='localhost:1001:1001:25538', mechanism='CURVE', credentials=['SXr9p0DYyP3K_ixoDz5WeGGfIHYN00WVj4K9Ouq2n0k'], user='control.connection'
+2022-03-28 18:35:44,379 () volttron.platform.auth INFO: AUTH: After authenticate user id: 'control.connection', b'9b278d09-fa15-4520-b182-c72961a521aa'
+2022-03-28 18:35:44,379 () volttron.platform.auth INFO: authentication success: userid=b'9b278d09-fa15-4520-b182-c72961a521aa' domain='vip', address='localhost:1001:1001:25610', mechanism='CURVE', credentials=['SXr9p0DYyP3K_ixoDz5WeGGfIHYN00WVj4K9Ouq2n0k'], user='control.connection'
+2022-03-28 18:35:44,773 (forwarderagent-5.1 23581) volttron.platform.agent.base_historian DEBUG: Stopping the process loop.
+2022-03-28 18:35:44,777 (forwarderagent-5.1 23581) volttron.platform.agent.base_historian DEBUG: Process loop stopped.
+2022-03-28 18:35:44,778 (forwarderagent-5.1 23581) volttron.platform.agent.base_historian DEBUG: Process loop stopped.
+2022-03-28 18:35:44,778 (forwarderagent-5.1 23581) volttron.platform.vip.agent.subsystems.pubsub DEBUG: AFTER: defaultdict(<function PubSub.__init__.<locals>.platform_subscriptions at 0xb4bf94b0>, {'internal': defaultdict(<function PubSub.__init__.<locals>.subscriptions at 0xb4bf94f8>, {'': defaultdict(<class 'set'>, {'devices': {<bound method ForwardHistorian._capture_device_data of <__main__.ForwardHistorian object at 0xb4bd7110>>}, Topic('datalogger'): {<bound method ForwardHistorian._capture_log_data of <__main__.ForwardHistorian object at 0xb4bd7110>>}, 'analysis': {<bound method ForwardHistorian._capture_analysis_data of <__main__.ForwardHistorian object at 0xb4bd7110>>}, Topic('record'): {<bound method ForwardHistorian._capture_record_data of <__main__.ForwardHistorian object at 0xb4bd7110>>}})})})
+2022-03-28 18:35:44,779 (forwarderagent-5.1 23581) volttron.platform.vip.agent.subsystems.pubsub DEBUG: AFTER: defaultdict(<function PubSub.__init__.<locals>.platform_subscriptions at 0xb4bf94b0>, {'internal': defaultdict(<function PubSub.__init__.<locals>.subscriptions at 0xb4bf94f8>, {'': defaultdict(<class 'set'>, {'devices': {<bound method ForwardHistorian._capture_device_data of <__main__.ForwardHistorian object at 0xb4bd7110>>}, Topic('datalogger'): {<bound method ForwardHistorian._capture_log_data of <__main__.ForwardHistorian object at 0xb4bd7110>>}, 'analysis': {<bound method ForwardHistorian._capture_analysis_data of <__main__.ForwardHistorian object at 0xb4bd7110>>}, Topic('record'): {<bound method ForwardHistorian._capture_record_data of <__main__.ForwardHistorian object at 0xb4bd7110>>}})})})
+2022-03-28 18:35:45,116 (platform_driveragent-4.0 24885) <stderr> ERROR: Traceback (most recent call last):
+2022-03-28 18:35:45,117 (platform_driveragent-4.0 24885) <stderr> ERROR:   File "src/gevent/greenlet.py", line 854, in gevent._gevent_cgreenlet.Greenlet.run
+2022-03-28 18:35:45,117 (platform_driveragent-4.0 24885) <stderr> ERROR:   File "/home/developer/.volttron/agents/7443a893-d89d-4605-8721-7482e1571c94/platform_driveragent-4.0/platform_driver/driver.py", line 163, in starting
+2022-03-28 18:35:45,118 (platform_driveragent-4.0 24885) <stderr> ERROR:     self.setup_device()
+2022-03-28 18:35:45,119 (platform_driveragent-4.0 24885) <stderr> ERROR:   File "/home/developer/.volttron/agents/7443a893-d89d-4605-8721-7482e1571c94/platform_driveragent-4.0/platform_driver/driver.py", line 186, in setup_device
+2022-03-28 18:35:45,119 (platform_driveragent-4.0 24885) <stderr> ERROR:     self.interface = self.get_interface(driver_type, driver_config, registry_config)
+2022-03-28 18:35:45,120 (platform_driveragent-4.0 24885) <stderr> ERROR:   File "/home/developer/.volttron/agents/7443a893-d89d-4605-8721-7482e1571c94/platform_driveragent-4.0/platform_driver/driver.py", line 158, in get_interface
+2022-03-28 18:35:45,121 (platform_driveragent-4.0 24885) <stderr> ERROR:     interface.configure(config_dict, config_string)
+2022-03-28 18:35:45,122 (platform_driveragent-4.0 24885) <stderr> ERROR:   File "/home/developer/.volttron/agents/7443a893-d89d-4605-8721-7482e1571c94/platform_driveragent-4.0/platform_driver/interfaces/bacnet.py", line 92, in configure
+2022-03-28 18:35:45,122 (platform_driveragent-4.0 24885) <stderr> ERROR:     self.ping_target()
+2022-03-28 18:35:45,123 (platform_driveragent-4.0 24885) <stderr> ERROR:   File "/home/developer/.volttron/agents/7443a893-d89d-4605-8721-7482e1571c94/platform_driveragent-4.0/platform_driver/interfaces/bacnet.py", line 111, in ping_target
+2022-03-28 18:35:45,124 (platform_driveragent-4.0 24885) <stderr> ERROR:     self.vip.rpc.call(self.proxy_address, 'ping_device', self.target_address, self.device_id).get(timeout=self.timeout)
+2022-03-28 18:35:45,125 (platform_driveragent-4.0 24885) <stderr> ERROR:   File "src/gevent/event.py", line 305, in gevent._gevent_cevent.AsyncResult.get
+2022-03-28 18:35:45,126 (platform_driveragent-4.0 24885) <stderr> ERROR:   File "src/gevent/event.py", line 332, in gevent._gevent_cevent.AsyncResult.get
+2022-03-28 18:35:45,126 (platform_driveragent-4.0 24885) <stderr> ERROR:   File "src/gevent/_abstract_linkable.py", line 346, in gevent._gevent_c_abstract_linkable.AbstractLinkable._wait_core
+2022-03-28 18:35:45,127 (platform_driveragent-4.0 24885) <stderr> ERROR:   File "src/gevent/_abstract_linkable.py", line 348, in gevent._gevent_c_abstract_linkable.AbstractLinkable._wait_core
+2022-03-28 18:35:45,128 (platform_driveragent-4.0 24885) <stderr> ERROR:   File "src/gevent/_abstract_linkable.py", line 303, in gevent._gevent_c_abstract_linkable.AbstractLinkable._AbstractLinkable__wait_to_be_notified
+2022-03-28 18:35:45,129 (platform_driveragent-4.0 24885) <stderr> ERROR:   File "src/gevent/_greenlet_primitives.py", line 61, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+2022-03-28 18:35:45,130 (platform_driveragent-4.0 24885) <stderr> ERROR:   File "src/gevent/_greenlet_primitives.py", line 61, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+2022-03-28 18:35:45,130 (platform_driveragent-4.0 24885) <stderr> ERROR:   File "src/gevent/_greenlet_primitives.py", line 65, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+2022-03-28 18:35:45,131 (platform_driveragent-4.0 24885) <stderr> ERROR:   File "src/gevent/_gevent_c_greenlet_primitives.pxd", line 35, in gevent._gevent_c_greenlet_primitives._greenlet_switch
+2022-03-28 18:35:45,132 (platform_driveragent-4.0 24885) <stderr> ERROR: gevent.timeout.Timeout: 30.0 seconds
+2022-03-28 18:35:45,133 (platform_driveragent-4.0 24885) <stderr> ERROR: 2022-03-28T18:30:34Z <Greenlet at 0xb4dc6390: <bound method DriverAgent.starting of <platform_driver.driver.DriverAgent object at 0xb4d7bf30>>(<volttron.platform.vip.agent.core.BasicCore object)> failed with Timeout
+2022-03-28 18:35:45,134 (platform_driveragent-4.0 24885) <stderr> ERROR: 
+2022-03-28 18:35:45,456 (vcplatformagent-4.8 23583) __main__ DEBUG: Shutting down agent.
+2022-03-28 18:35:49,974 (platform_driveragent-4.0 25651) root DEBUG: Creating ZMQ Core platform.driver
+2022-03-28 18:35:50,061 (forwarderagent-5.1 25650) volttron.platform.agent.base_historian DEBUG: Constructor of BaseHistorian thread: MainThread
+2022-03-28 18:35:50,061 (forwarderagent-5.1 25650) volttron.platform.agent.base_historian DEBUG: Constructor of BaseQueryHistorianAgent thread: MainThread
+2022-03-28 18:35:50,061 (forwarderagent-5.1 25650) volttron.platform.agent.utils DEBUG: value from env False
+2022-03-28 18:35:50,075 (forwarderagent-5.1 25650) <stderr> ERROR: Generating LALR tables
+2022-03-28 18:35:50,074 (forwarderagent-5.1 25650) root DEBUG: Creating ZMQ Core fh_kirkland2
+2022-03-28 18:35:50,084 (forwarderagent-5.1 25650) volttron.platform.agent.base_historian INFO: Topic string replace list: []
+2022-03-28 18:35:50,128 () volttron.platform.auth INFO: AUTH: After authenticate user id: 'platform.driver', b'9b278d09-fa15-4520-b182-c72961a521aa'
+2022-03-28 18:35:50,129 () volttron.platform.auth INFO: authentication success: userid=b'9b278d09-fa15-4520-b182-c72961a521aa' domain='vip', address='localhost:1001:1001:25651', mechanism='CURVE', credentials=['iiaptEsXt37Pfot7AncKaZ5Xu98ETMJKbLwt1tLedD0'], user='platform.driver'
+2022-03-28 18:35:50,129 (bacnet_proxyagent-0.5 25649) root DEBUG: Creating ZMQ Core platform.bacnet_proxy
+2022-03-28 18:35:50,138 (bacnet_proxyagent-0.5 25649) __main__ INFO: seg_supported segmentedBoth
+2022-03-28 18:35:50,139 (bacnet_proxyagent-0.5 25649) __main__ INFO: max_apdu_len 1024
+2022-03-28 18:35:50,141 (bacnet_proxyagent-0.5 25649) __main__ INFO: obj_id 599
+2022-03-28 18:35:50,142 (bacnet_proxyagent-0.5 25649) __main__ INFO: obj_name Volttron BACnet driver
+2022-03-28 18:35:50,143 (bacnet_proxyagent-0.5 25649) __main__ INFO: ven_id 5
+2022-03-28 18:35:50,166 (platform_driveragent-4.0 25651) volttron.platform.vip.agent.core INFO: Connected to platform: router: 9b278d09-fa15-4520-b182-c72961a521aa version: 1.0 identity: platform.driver
+2022-03-28 18:35:50,222 () volttron.platform.auth INFO: AUTH: After authenticate user id: 'fh_kirkland2', b'9b278d09-fa15-4520-b182-c72961a521aa'
+2022-03-28 18:35:50,223 () volttron.platform.auth INFO: authentication success: userid=b'9b278d09-fa15-4520-b182-c72961a521aa' domain='vip', address='localhost:1001:1001:25650', mechanism='CURVE', credentials=['LVf8iDHK8OWke3AgCvdrj0-jMK-l31OkDqDlr0r7830'], user='fh_kirkland2'
+2022-03-28 18:35:50,226 (platform_driveragent-4.0 25651) volttron.platform.vip.agent.subsystems.configstore DEBUG: Processing callbacks for affected files: {'devices/kirkland/2227623': 'NEW', 'registry_configs/2227623.csv': 'NEW', 'config': 'NEW'}
+2022-03-28 18:35:50,228 (platform_driveragent-4.0 25651) __main__ INFO: maximum concurrently open sockets limited to 838860 (derived from system limits)
+2022-03-28 18:35:50,228 (platform_driveragent-4.0 25651) __main__ INFO: maximum concurrent driver publishes limited to 10000
+2022-03-28 18:35:50,231 (platform_driveragent-4.0 25651) __main__ INFO: In update_driver
+2022-03-28 18:35:50,233 (platform_driveragent-4.0 25651) __main__ INFO: Starting driver: kirkland/2227623
+2022-03-28 18:35:50,235 (platform_driveragent-4.0 25651) platform_driver.driver DEBUG: kirkland/2227623 group: 0, time_slot: 0, offset: 0.0
+2022-03-28 18:35:50,261 () volttron.platform.auth INFO: AUTH: After authenticate user id: 'platform.bacnet_proxy', b'9b278d09-fa15-4520-b182-c72961a521aa'
+2022-03-28 18:35:50,266 () volttron.platform.auth INFO: authentication success: userid=b'9b278d09-fa15-4520-b182-c72961a521aa' domain='vip', address='localhost:1001:1001:25649', mechanism='CURVE', credentials=['sjWYeyO4Dc2zEj_kR0_0kIM7tWBPBItHh6RZoRgTBmo'], user='platform.bacnet_proxy'
+2022-03-28 18:35:50,264 (forwarderagent-5.1 25650) volttron.platform.vip.agent.core INFO: Connected to platform: router: 9b278d09-fa15-4520-b182-c72961a521aa version: 1.0 identity: fh_kirkland2
+2022-03-28 18:35:50,290 (bacnet_proxyagent-0.5 25649) volttron.platform.vip.agent.core INFO: Connected to platform: router: 9b278d09-fa15-4520-b182-c72961a521aa version: 1.0 identity: platform.bacnet_proxy
+2022-03-28 18:35:50,295 (forwarderagent-5.1 25650) volttron.platform.vip.agent.subsystems.configstore DEBUG: Processing callbacks for affected files: {'config': 'NEW'}
+2022-03-28 18:35:50,309 (forwarderagent-5.1 25650) volttron.platform.agent.base_historian INFO: Topic string replace list: []
+2022-03-28 18:35:50,309 (
